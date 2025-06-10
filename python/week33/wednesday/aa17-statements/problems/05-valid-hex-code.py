@@ -5,6 +5,22 @@
 # from A-F. All alphabetic characters may be uppercase or lowercase.
 
 # Write your function here.
+def is_valid_hex_code(hex_code):
+    if not hex_code.startswith('#'):
+        return False
+
+    if len(hex_code) != 7:
+        return False
+
+    hex_digits = hex_code[1:]  
+    
+    for char in hex_digits:
+        if not (char.isdigit() or char.upper() in 'ABCDEF'):
+            return False
+    
+    return True
+
+
 
 
 print(is_valid_hex_code("#CD5C5C"))  #> True

@@ -3,6 +3,13 @@
 
 # Write your solution here.
 
+def add_upper(string):
+    result = ""
+    for char in string:
+        if char.isupper():
+            result += char
+    return result
+
 
 print(add_upper("ApPlE"))        #> APE
 print(add_upper("Coding"))       #> C

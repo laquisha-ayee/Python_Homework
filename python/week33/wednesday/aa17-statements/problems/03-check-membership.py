@@ -5,7 +5,10 @@
 
 # Write your solution here.
 def check_membership(guest_name, guest_list):
-    pass
+   return guest_name in guest_list
+
+
+
     
 guest_list = ["George", "Anthony", "Susan", "Tiffany"]
 print(check_membership("Sally", guest_list))        # False

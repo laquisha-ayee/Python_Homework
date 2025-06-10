@@ -14,6 +14,30 @@
 # than 30 minutes on it.
 
 # Write your function here.
+def seq_of_numbers(s):
+   
+    s += " "
+    
+    result = ""
+    index = 0
+    count = 1
+    
+    while index < len(s) - 1:
+        if s[index] != s[index + 1]:
+            result += str(count) + s[index]
+            count = 1  
+        else:
+            count += 1
+        
+        index += 1
+    
+    return result
+
+
+
+
+
+
 # There are hints after the print statements
 
 

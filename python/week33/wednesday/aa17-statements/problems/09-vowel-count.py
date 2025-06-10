@@ -3,6 +3,10 @@
 
 # Write your solution here.
 
+def vowel_count(string):
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in string if char in vowels)
+
 
 print(vowel_count("App Academy"))         #> 4
 print(vowel_count("Coding Expert"))       #> 4
