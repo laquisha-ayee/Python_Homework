@@ -6,6 +6,20 @@
 # <= `length`.)
 
 # Write your function here.
+def fill_tuple(tuple_of_tuples, value, length):
+    result = []
+    for nested_tuple in tuple_of_tuples:
+        current_length = len(nested_tuple)
+        if current_length < length:
+            elements_to_add = length - current_length
+            new_tuple = nested_tuple + (value,) * elements_to_add
+        else:
+            new_tuple = nested_tuple
+        result.append(new_tuple)
+    return tuple(result)
+
+
+
 
 print(fill_tuple(((58, 1, 5), (0, 3), (45, ), (24, 23)), 2, 3))    #> ((58, 1, 5), (0, 3, 2), (45, 2, 2), (24, 23, 2))
 print(fill_tuple(((1, ), (5, 7), (55, 22), (80, 52, 20)), 5, 4))   #> ((1, 5, 5, 5), (5, 7, 5, 5), (55, 22, 5, 5), (80, 52, 20, 5))

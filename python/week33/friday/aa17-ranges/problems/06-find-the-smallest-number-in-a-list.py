@@ -2,6 +2,11 @@
 # in the list.
 
 # Write your function here.
+def find_smallest_num(lst):
+    return min(lst)
+
+
+
 
 print(find_smallest_num([34, 15, 88, 2]))                   #> 2
 print(find_smallest_num([34, -345, -1, 100]))               #> -345

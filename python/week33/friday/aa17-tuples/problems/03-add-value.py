@@ -3,6 +3,9 @@
 # tuple.
 
 # Write your function here.
+def add_value(tup, val):
+    return tuple(list(tup) + [val])
+    
 
 print(add_value((1,2,3,4), 5)) #> (1, 2, 3, 4, 5)
 print(add_value(("a", "b", "c"), "d")) #> ('a', 'b', 'c', 'd')

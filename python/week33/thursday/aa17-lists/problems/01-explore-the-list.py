@@ -9,21 +9,27 @@ print ('COLORS', colors)
 print ('NUMBERS', numbers)
 
 # 1. Print the total number of colors (length of the list)
+print('total number of colors:', len(colors))
 
 # 2. Print the first color
+print('first color:', colors[0])
 
 # 3. Print the second and third colors
+print('second and third colors:', colors[1:3])
 
 # 4. Print the last two colors
+print('last two colors:', colors[-2:])
 
 # 5. Print the smallest number in the numbers list
+print('smallest number:', min(numbers))
 
 # 6. Print the largest number in the numbers list
+print('largest number:', max(numbers))
 
-# UNCOMMENT WHEN YOU WORK ON #7
+# 7. Sort the numbers list
+numbers.sort()
 print ('SORTED NUMBERS', numbers)
 
 # 8. Sort the colors alphabetically ignoring case
-
-# UNCOMMENT WHEN YOU WORK ON #8
+colors.sort(key=str.lower)
 print ('SORTED COLORS', colors)

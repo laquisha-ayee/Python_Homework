@@ -6,10 +6,16 @@
 # Please follow the steps outlined below.
 
 # STEP 1 - Write a function named `welcome` that prints a welcome message
+def welcome():
+      print("Welcome to Python!")
+
 
 # Step 2 - Write a function named `calc_sum` that
 #   - takes in two numbers and
 #   - returns their sum
+def calc_sum(a, b):
+      return a + b
+
 
 # DO NOT EDIT - The guts of the program
 welcome()

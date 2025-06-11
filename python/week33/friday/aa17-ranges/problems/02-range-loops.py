@@ -9,4 +9,8 @@
 # from 2^1st - 2^16th powers
 
 # Write your code here.
-  
+for i in range(1,17):
+    print(2**i)
+
+
+

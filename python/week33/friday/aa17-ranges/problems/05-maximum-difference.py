@@ -2,6 +2,9 @@
 # smallest integers in the list.
 
 # Write your function here.
+def difference(lst):
+    return max(lst) - min(lst)
+
 
 print(difference([10, 15, 20, 2, 10, 6]))
 # 20 - 2 = 18
